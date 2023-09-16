@@ -1,0 +1,20 @@
+1. Készíts számkitalálos játékot a következőképpen:
+-Egy gombra kattintva lehessen elindítani a játékot! A gombra kattintáskor a program generáljon egy egész számot 1 és 100 között, majd a kattintás után tiltsa le a gombot.
+-Legyen a weblapon egy szám beviteli mező és egy másik gomb! A gombra kattintva a program ellenőrizze, hogy a beírt szám kisebb, nagyobb vagy egyenlő a generált számmal.
+Ha egyenlő a számmal, akkor írja ki, hogy "Eltaláltad! Lépések száma: " utána írja, hogy mennyi lépésre volt ehhez szükség. (Ez a lépések megszámlálása csak plusz feladat)
+Ha a beírt szám kisebb a generált számnál, akkor írja ki, hogy "Írj be nagyobb számot!"
+Ha a beírt szám nagyobb a generált számnál, akkor írja ki, hogy "Írj be kisebb számot!"
+-Ha sikerül eltalálni a számot, engedélyezze újra a játék indítása gombot, és kezdődjön az elejétől a játék!
+
+2.
+Készíts weblapot 20 oldalas D&D dobókocka szimulálására! Azt szeretnéd szimulálni, hogy az ellenfélnek 50 000 életereje van, és le szeretnénk tesztelni, hogy 20 kör alatt mennyit lehet sebezni belőle:
+-Lehessen beírni egy számot beviteli mezőbe 1 és 50 közötti értékkel, amely az erő (strength) értékét jelenti, és a gombra kattintva 20 alkalommal hajtja végre a következőt:
+	-Generál egy véletlen számot 1 és 20 között.
+	-Ha a generált szám 0-4, akkor a sebzés értéke 0. (a támadás érvénytelen, miss)
+	-Minden más esetben a sebzés értéke: a generált szám*erő. 
+	-Minden kör után írja ki, hogy az ellenfélnek mennyi életereje maradt!
+
+Pl. az erő értéke: 20,
+1. körben a generált érték 15 		sebzés: 15*20=3000		maradt életerő: 47000
+2. körben a generált érték 0			sebzés: 0					maradt életerő: 47000
+...

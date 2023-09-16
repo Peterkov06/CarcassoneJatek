@@ -1,0 +1,39 @@
+body
+{
+    background-color: #9da7ffb4;
+    
+}
+
+#main
+{
+    padding-top: 18px;
+    min-height: 500px;
+    height: 100%;
+}
+
+#fill
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#per
+{
+    color: white;
+}
+
+#per:hover
+{
+    color: white;
+}
+
+#link
+{
+    color: black;
+}
+
+#link:hover
+{
+    color:white;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Történelem</title>
+    <link rel="icon" type="image/x-icon" href="Képek/icon.jpg">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <div class="container-fluid">
+            <a class="navbar-brand">Töri Búvár: Horthy Miklós</a>
+            <a class="navbar-brand ms-auto"><img id="logo" src="Képek/konyvjelzo.svg" alt=""></a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 id="kozep">Horthy Miklós élete</h1>
+
+
+      <div class="row">
+          <div class="nav flex-column col-sm-12 col-md-2 col-lg-2 mb-2" id="sidebar">
+            <h4 class="text-center">Menü</h4>
+            <a href="../index.html" id="visszaF" class="menu"> Vissza a főoldalra <br></a>
+            <a href="index.html" class="menu">1914-ig</a>
+            <a href="1vh.html" class="menu">Az I. világháború</a>
+            <a href="kozott.html" class="menu">A két háború közt</a>
+            <a href="2vh.html" class="menu">A II. világháborúban</a>
+            <a href="2vhutan.html" class="menu">A II. világháború után</a>
+            <a href="#" id="active" class="menu">Feladatsor Horthy életéből</a>
+          </div>
+
+          <div class="col-sm-12 col-md-10 col-lg-10">
+            <!--SlideShow-->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          </div>
+        
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner" style="height: 300px; background-color: rgba(161, 247, 161, 50%);; border-radius: 10px; border: 3px solid black;">
+            <div class="carousel-item active">
+              <img src="Képek/icon.jpg" alt="Horthy" class="d-block m-auto" style="height: 290px; width: auto;">
+            </div>
+            <div class="carousel-item">
+              <img src="Képek/gyermek.jpg" alt="Horthy gyermekként" class="d-block m-auto" style="height: 290px; width: auto;">
+            </div>
+            <div class="carousel-item">
+              <img src="Képek/horthyfiatal.jpg" alt="Sorhajózászlós korában" class="d-block m-auto" style="height: 290px; width: auto;">
+            </div>
+            <div class="carousel-item">
+              <img src="Képek/SMS_Radetzky.jpg" alt="Az SMS Radetzky" class="d-block m-auto" style="height: 290px; width: auto;">
+            </div>
+          </div>
+        
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+          </div>
+          </div>
+          <div class="row">
+
+            <div class="col-sm-2 col-md-2 col-lg-2">
+
+            </div>
+
+  
+                <div class="col-sm-12 col-md-10 col-lg-10 ms-auto mt-2 mb-2">
+                    <div id="fill">
+                        
+                        <fieldset id="feladatsor"  style="border: 3px solid black; border-radius: 8px; border-collapse: separate;
+                        border-spacing: 15px; padding: 0px 10px; background-color: rgba(161, 247, 161, 50%);">
+                            <legend>Kérdések Horthy életéből</legend>
+                            <form>
+                                
+                                
+                                <p>
+                                    1. Melyik évben és hol született Horthy Miklós? <br> <input type="number" name="szulev" id="szuletesiev"> 
+                                    <select name="szulhey" id="szulhely">
+                                        <option value="pecs">Pécs</option>
+                                        <option value="kecskemet">Kecskemét</option>
+                                        <option value="Kenderes">Kenderes</option>
+                                        <option value="budapest">Budapest</option>
+                                    </select>
+                                    <div id="szulpont" class="pontok"></div>
+                                </p>
+        
+                                <p>
+                                    2. Hol végezte tanulmányait? <br>
+                                    <input type="checkbox" name="pecs" id="pecs"> pécsi kollégium <br>
+                                    <input type="checkbox" name="debrecen" id="debrecen"> debreceni kollégium <br>
+                                    <input type="checkbox" name="pest" id="pest"> pesti egyetem <br>
+                                    <input type="checkbox" name="sopron" id="soproni"> soproni gimnázium
+                                    <div id="iskola" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    3. Hogyan hívták a feleségét? <br>
+                                    <input type="text" name="feles" id="feles">
+                                    <div id="felespont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    4. Melyik hadihajó kapitánya lett 1914. december 1-én? <br>
+                                    <input type="text" name="hajo" id="hajo">
+                                    <div id="hajopont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    5. Melyik évben zajlott le a harmadik otrantoi csata? <br>
+                                    <select name="otranto" id="otranto">
+                                        <option value="1914">1914</option>
+                                        <option value="1916">1916</option>
+                                        <option value="1917">1917</option>
+                                        <option value="1939">1939</option>
+                                        
+                                    </select>
+                                    <div id="otpont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    6. Melyik évben lett Horthy Miklós a Császári és Királyi Haditengerészet főparancsnoka? <br>
+                                    <select name="fopar" id="fopar">
+                                        <option value="1914">1914</option>
+                                        <option value="1917">1917</option>
+                                        <option value="1918">1918</option>
+                                        <option value="1920">1920</option>
+                                    </select>
+                                    <div id="foparpont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    7. Ki előtt tette le a fővezéri esküt 1919. június 6-án Budapesten? <br>
+                                    <select name="esku" id="esku">
+                                        <option value="IV. Karoly">IV. Károly</option>
+                                        <option value="Ferenc Jozsef">Ferenc József</option>
+                                        <option value="II. Vilmos">II. Vilmos</option>
+                                        <option value="Jozsef foherceg">József főherceg, kormányzó</option>
+                                        
+                                    </select>
+                                    <div id="eskupont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    8. Hányszor próbálta meg IV. Károly visszaszerezni a trónját? <br>
+                                    <input type="number" name="tron" id="tron">
+                                    <div id="tronpont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    9. Milyen rendet alapított Horthy, hogy honorálni tudja az első világháborús érdemeket? <br>
+                                    <input type="text" name="rend" id="rend">
+                                    <div id="rendpont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    10. Ki volt az a miniszterelnök, aki 1932-től Magyarországot a fasiszta hatalmak felé húzta? <br>
+                                    <input type="text" name="minisz" id="minisz">
+                                    <div id="miniszpont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    11. Milyen esemény következtében lépett be Magyarország a II. világháborúba? <br>
+                                    <select name="esem" id="esem">
+                                        <option value="Kenderes bombazasa">Kenderes bombázása</option>
+                                        <option value="KassaBombazasa">Kassa bombázása</option>
+                                        <option value="A Titanic elsüllyedese">A Titanic elsüllyedése</option>
+                                        <option value="Pearl Harbor bombazasa">Pearl Harbor bombázása</option>
+                                        
+                                    </select>
+                                    <div id="esempont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    12. Kinek kellett átadnia Horthynak a nemzetvezetői hatalmat lemondása után? <br>
+                                    <input type="text" name="nemzetv" id="nemzetv">
+                                    <div id="nemzetvpont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    13. Melyik országba ment a II. világháború után? <br>
+                                    <select name="kulf" id="kulf">
+                                        <option value="Spanyol">Spanyolországba</option>
+                                        <option value="Svajc">Svájcba</option>
+                                        <option value="Fro">Franciaországba</option>
+                                        <option value="Portu">Portugáliába</option>
+                                    </select>
+                                    <div id="kpont" class="pontok"></div>
+                                </p>
+
+                                <p>
+                                    <input type="reset" value="Törlés">
+                                    <input type="button" value="Ellenőrzés" onclick="ellen()">
+                                </p>
+
+                                <p>
+                                    <div id="opont" class="pontok"></div>
+                                </p>
+
+                            </form>
+                            
+
+                        </fieldset>
+
+                    </div>
+                </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="ellenorzes.js"></script>
+
+    <footer class="bg-dark text-light text-center text-lg-start mt-auto">
+        <div class="text-center p-3">
+          &copy; 2022
+
+          <button data-bs-toggle="collapse" data-bs-target="#forrasok" class="btn btn-dark">Felhasznált források</button>
+
+          <div id="forrasok" class="collapse">
+
+              
+              <ul id="nomimg">
+                <li><a href="https://mult-kor.hu/a-nemzetmentotol-a-nemzetvesztoig-hanyfele-horthy-kep-letezik-20220209" target="_blank">https://mult-kor.hu/a-nemzetmentotol-a-nemzetvesztoig-hanyfele-horthy-kep-letezik-20220209</a></li>
+                <li><a href="https://m.militaria.hu/digitalis-hadtortenelem-hadtorteneti-oktatasi-csomagok-iskolak-szamara/a-trianoni-bekeszerzodes-es-annak-hatasai/a-trianoni-bekeszerzodes-es-annak-hatasai-a-katona/horthy-miklos" target="_blank">https://m.militaria.hu/digitalis-hadtortenelem-hadtorteneti-oktatasi-csomagok-iskolak-szamara/a-trianoni-bekeszerzodes-es-annak-hatasai/a-trianoni-bekeszerzodes-es-annak-hatasai-a-katona/horthy-miklos</a> </li>
+                <li><a href="http://www.bibl.u-szeged.hu/bibl/mil/ww2/who/horthy.html" target="_blank">http://www.bibl.u-szeged.hu/bibl/mil/ww2/who/horthy.html</a></li>
+                
+              </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

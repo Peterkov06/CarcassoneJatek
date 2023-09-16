@@ -1,0 +1,134 @@
+body
+{
+    background-color: #29a329;
+}
+
+.container
+{
+    background-color: #47d147;
+}
+
+#kozep
+{
+    text-align: center;
+    
+}
+
+#roviden
+{
+    text-align: justify;
+}
+
+#sidebar
+{
+    background-color: green;
+    border-radius: 10px;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+#sidebar a
+{
+    text-decoration: none;
+}
+
+#fill
+{
+    display: flexbox;
+    flex-direction: column;
+    height: 100%;
+}
+
+#logo
+{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    margin-left: -90px;
+    height: 180px;
+}
+
+@media screen and (max-width: 1080px) 
+{
+    #logo {
+        max-width: 13%;
+        margin-left: -50px;
+        margin-top: -35px;
+        z-index: -4;
+    }
+}
+
+#visszaF::before
+{
+    background-image: url('Képek/vissza.svg');
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px; 
+    height: 15px;
+    content:"";
+}
+
+.menu
+{
+    color: black;
+    font-style: italic;
+}
+
+.menu:hover
+{
+    color: wheat;
+}
+
+#active
+{
+    color: aqua;
+}
+
+#kepcim
+{
+    font-style: italic;
+    font-size: 0.9em;
+    margin-right: 20px;
+}
+
+#kepcim hr
+{
+    margin-bottom: 2px;
+    height: 2px;
+}
+
+#kepcimBal
+{
+    font-style: italic;
+    font-size: 0.9em;
+    margin-left: 20px;
+    text-align: right;
+}
+
+#kepcimBal hr
+{
+    margin-bottom: 2px;
+    height: 2px;
+}
+
+nav
+{
+    background-color: #196719;
+}
+
+#feladatsor
+{
+    border: 5px ridge;
+}
+
+.pontok
+{
+    text-align: right;
+    color: red;
+}
+
+ul
+{
+    list-style-type: none;
+
+}
