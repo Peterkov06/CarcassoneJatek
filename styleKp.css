@@ -1,7 +1,7 @@
 body
 {
     background-color: #9da7ffb4;
-    
+    height: 100vh;
 }
 
 #main
@@ -36,4 +36,9 @@ body
 #link:hover
 {
     color:white;
+}
+
+footer
+{
+    clear: both;
 }
